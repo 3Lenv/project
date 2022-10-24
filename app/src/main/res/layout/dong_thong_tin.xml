@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageviewHinh"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        android:padding="20dp" />
+
+    <TextView
+        android:id="@+id/txtTen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/imageviewHinh"
+        android:text="Ten"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtGiamoi"
+        android:textSize="20sp"
+        android:textColor="#ff0000"
+        android:text="12000₫"
+        android:layout_marginLeft="10sp"
+        android:layout_toRightOf="@id/imageviewHinh"
+        android:layout_below="@+id/txtTen" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtGiacu"
+        android:textSize="20sp"
+        android:text="15000₫"
+        android:layout_marginLeft="65sp"
+        android:layout_toRightOf="@id/txtGiamoi"
+        android:layout_below="@+id/txtTen"
+        android:textColor="#3A3A3A" />
+
+    <ImageView
+        android:id="@+id/imageRating"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/txtGiacu"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="5dp"
+        android:outlineAmbientShadowColor="#FFC107"
+        android:layout_toRightOf="@id/imageviewHinh" />
+
+    <ImageView
+        android:id="@+id/imageviewicon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/txtTen"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/txtGiacu" />
+
+</RelativeLayout>

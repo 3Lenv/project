@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageviewHinh"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:padding="20dp" />
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/imageviewHinh"
+        android:id="@+id/txtTen"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        android:text="Ten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/imageviewicon1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/txtTen"
+        android:layout_toRightOf="@+id/imageviewHinh" />
+
+    <ImageView
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/imageviewicon1"
+        android:layout_toRightOf="@+id/imageviewHinh"
+        android:id="@+id/imageviewicon2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+
+    <TextView
+        android:layout_below="@+id/txtTen"
+        android:layout_toRightOf="@+id/imageviewicon1"
+        android:id="@+id/txtSanpham"
+        android:text="10 San pham"
+        android:paddingLeft="10sp"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/txtGiamgia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSanpham"
+        android:layout_toRightOf="@+id/imageviewicon2"
+        android:paddingLeft="10sp"
+
+        android:text="10 Dang giam gia"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imageviewicon3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/txtTen"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@+id/txtSanpham" />
+
+
+</RelativeLayout>
